@@ -157,22 +157,6 @@ Access the interface at `http://localhost:8501`
 
 We implement **Gradient-weighted Class Activation Mapping (Grad-CAM)** to provide visual explanations for both tasks:
 
-#### Mathematical Foundation
-For each task head \( t \in \{\text{crop}, \text{condition}\} \):
-
-\[
-\alpha_{k}^{t,c} = \frac{1}{Z} \sum_{i} \sum_{j} \frac{\partial y_{c}^{t}}{\partial A_{ij}^{k}}
-\]
-
-\[
-L_{t}^{c} = \text{ReLU}\left(\sum_{k} \alpha_{k}^{t,c} A^{k}\right)
-\]
-
-Where:
-- \( A^{k} \): Activations from last Conv2D layer (128-channel)
-- \( y_{c}^{t} \): Class score for task \( t \) and class \( c \)
-- \( Z \): Normalization factor (width × height)
-
 #### Key Insights (200 validation samples)
 **Crop Classification**:
 - Potato: Focuses on skin texture and shape contours (α = 0.79 ± 0.12)
