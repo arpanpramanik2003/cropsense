@@ -197,9 +197,6 @@ We implement **Gradient-weighted Class Activation Mapping (Grad-CAM)** to provid
 
 ## 👥 Contributors
 
-- **Shibdas Dutta** - Dept. of CSE, Amity University Madhya Pradesh  
-  📧 shibdas.dutta@gmail.com
-
 - **Arpan Pramanik** - Dept. of CSE, The Neotia University  
   📧 pramanikarpan089@gmail.com
 
